@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-public class Spawner<T>: MonoBehaviour where T : Component
+public class Spawner<T> : MonoBehaviour where T : Component
 {
     [SerializeField] protected T _prefab;
     [SerializeField] protected int _poolCapacity = 10;

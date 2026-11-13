@@ -185,7 +185,7 @@ MonoBehaviour:
   _explosionRadius: 25
   _explosionForce: 50
   _effect: {fileID: 7077444635568206804, guid: 7a12b40fb78f3694ea3ba5830db032b4, type: 3}
-  _effectLifeTime: 2
+  _effectLifeTime: 0.5
 --- !u!114 &2151702697067079218
 MonoBehaviour:
   m_ObjectHideFlags: 0

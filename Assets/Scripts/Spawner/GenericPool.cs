@@ -23,7 +23,7 @@ public class GenericPool<T> where T : Component
             createFunc: () => CreateAnObject(_prefab),
             actionOnGet: (obj) => ActionOnGet(obj),
             actionOnRelease: (obj) => ActionOnRelease(obj),
-            actionOnDestroy: (obj) => UnityEngine.Object.Destroy(obj),
+            actionOnDestroy: (obj) => UnityEngine.Object.Destroy(obj.gameObject),
             collectionCheck: true,
             defaultCapacity: capacity,
             maxSize: maxSize);

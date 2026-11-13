@@ -7,7 +7,7 @@ public class ColorChanger : MonoBehaviour
         renderer.material.color = color;
     }
 
-    public void ChangingColorOfCube(Renderer renderer)
+    public void ChangColorOfCube(Renderer renderer)
     {
         renderer.material.color = Random.ColorHSV();
     }

@@ -55,7 +55,7 @@ public class Cube : SpawnebelObject
             return;
 
         _hasAlreadyBeenTouch = true;
-        _colorController.ChangingColorOfCube(_renderer);
+        _colorController.ChangColorOfCube(_renderer);
 
         StartLifeCounter();
     }

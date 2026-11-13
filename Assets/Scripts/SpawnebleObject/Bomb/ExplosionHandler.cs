@@ -6,7 +6,7 @@ public class ExplosionHandler : MonoBehaviour
     [SerializeField] private float _explosionRadius = 25f;
     [SerializeField] private float _explosionForce = 50f;
     [SerializeField] private ParticleSystem _effect;
-    [SerializeField] private float _effectLifeTime = 2f;
+    [SerializeField] private float _effectLifeTime = 0.5f;
 
     public void Explode(Bomb bomb)
     {
@@ -15,7 +15,7 @@ public class ExplosionHandler : MonoBehaviour
 
         ParticleSystem effect = Instantiate(_effect, bomb.transform.position, bomb.transform.rotation);
 
-        Destroy(effect, _effectLifeTime);
+        Destroy(effect.gameObject, _effectLifeTime);
     }
 
     private List<Rigidbody> GetExplodableObjects(Bomb bomb)

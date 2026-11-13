@@ -1095,7 +1095,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 581262331}
+  - component: {fileID: 581262334}
   - component: {fileID: 581262333}
+  - component: {fileID: 581262332}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -1121,6 +1123,20 @@ Transform:
   - {fileID: 109940615}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &581262332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581262328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5814e073e6370946b206cdf83d41529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventAtDeathOfCube
+  _spawnerCube: {fileID: 1744842981}
+  _spawnerBomb: {fileID: 346666406}
 --- !u!114 &581262333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1130,13 +1146,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 581262328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71b978d8ef60e8d45acd517ddd0f2be0, type: 3}
+  m_Script: {fileID: 11500000, guid: e5ef3172ded2d3e4abaabeb98249f973, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnLinker
+  m_EditorClassIdentifier: Assembly-CSharp::CubeLinker
+  _viewSpawner: {fileID: 1070125147}
   _spawnerCube: {fileID: 1744842981}
+--- !u!114 &581262334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581262328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528201e40d1a7bf428b8b4c862323372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BombLinker
+  _viewSpawner: {fileID: 790440165}
   _spawnerBomb: {fileID: 346666406}
-  _viewSpawnerCubes: {fileID: 1070125147}
-  _viewSpawnerBombs: {fileID: 790440165}
 --- !u!1 &726729243
 GameObject:
   m_ObjectHideFlags: 0
